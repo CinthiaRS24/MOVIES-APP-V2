@@ -4,7 +4,7 @@ import { Navigate, useNavigate, Link } from 'react-router-dom';
 import swal from '@sweetalert/with-react';
 import CardMovie from './CardMovie';
 
-function Listado () {
+function Listado ({addOrRemoveFromFavs}) {
     let token = sessionStorage.getItem('token');
 
     const [moviesList, setMoviesList] = useState([]);
@@ -31,7 +31,7 @@ function Listado () {
             {!token && <Navigate to="/"/>}
 
             {moviesList && 
-            <CardMovie movies={moviesList}/>
+            <CardMovie movies={moviesList} addOrRemoveFromFavs={addOrRemoveFromFavs}/>
             }
             
             
