@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Navigate, useNavigate, Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import swal from '@sweetalert/with-react';
 import CardMovie from './CardMovie';
 
-function Listado ({addOrRemoveFromFavs}) {
+function Listado ({addOrRemoveFromFavs, favorites}) {
     let token = sessionStorage.getItem('token');
 
     const [moviesList, setMoviesList] = useState([]);
@@ -31,7 +31,7 @@ function Listado ({addOrRemoveFromFavs}) {
             {!token && <Navigate to="/"/>}
 
             {moviesList && 
-            <CardMovie movies={moviesList} addOrRemoveFromFavs={addOrRemoveFromFavs}/>
+            <CardMovie movies={moviesList} addOrRemoveFromFavs={addOrRemoveFromFavs} favorites={favorites}/>
             }
             
             

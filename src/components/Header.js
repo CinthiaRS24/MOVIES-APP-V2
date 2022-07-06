@@ -20,6 +20,9 @@ function Header () {
                             <li className="nav-item">
                                 <Link to="/listado" className="nav-link" >Listado</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/favoritos" className="nav-link" >Favoritos</Link>
+                            </li>
                         {/* <li className="nav-item">
                             <Link to="/contacto" className="nav-link" >Contacto</Link>
                         </li> */}
