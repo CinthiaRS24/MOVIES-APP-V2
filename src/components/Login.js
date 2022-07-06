@@ -1,6 +1,8 @@
 import axios from "axios";
 import swal from '@sweetalert/with-react';
 import { Navigate, useNavigate } from 'react-router-dom';
+import "../css/app.css"
+
 
 function Login() {
     const navigate = useNavigate();
@@ -49,25 +51,25 @@ function Login() {
     let token = sessionStorage.getItem('token');
 
     return (
-        <>
+        <div className="divLogin">
             {token && <Navigate to="/listado"/>}
             <div className="row">
                 <h2>Formulario de Login</h2>
                 <form onSubmit={submitHandler}>
                     <label className="form-label d-block mt-2">
                         <span>Correo electrónico:</span> <br/>
-                        <input className="form-control" type="text" name="email" />
+                        <input className="form-control" id="form-control" type="text" name="email"  />
                     </label>
                     <br/>
                     <label className="form-label d-block mt-2">
                         <span>Contraseña:</span> <br/>
-                        <input className="form-control" type="password" name="password" />
+                        <input className="form-control" id="form-control" type="password" name="password" />
                     </label>
                     <br/>
-                    <button className="btn btn-primary" type="submit" >Ingresar</button>
+                    <button className="btn btn-success" type="submit" >Ingresar</button>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
 

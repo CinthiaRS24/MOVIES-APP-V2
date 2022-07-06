@@ -41,10 +41,22 @@ body {
 }
 
 .divFav {
-    min-height: 100vh;
+    min-height: 67.1vh;
     margin: auto;
 }
 
 .copyright {
     margin-top: 18px;
+}
+
+.divLogin {
+    min-height: 67.1vh;
+}
+
+.row {
+    padding-top: 35px;
+}
+
+#form-control {
+    width: 50%;
 }
