@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 //Components
 import Buscador from "./Buscador"
 
-function Header () {
+function Header ({addOrRemoveFromFavs}) {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
@@ -28,7 +28,7 @@ function Header () {
                         </li> */}
                         </ul>
                     </div>
-                    <Buscador/>
+                    <Buscador />
                 </div>
             </nav>
         </header>

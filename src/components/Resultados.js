@@ -3,7 +3,7 @@ import CardMovie from "./CardMovie";
 import axios from "axios";
 import swal from '@sweetalert/with-react';
 
-function Resultados () {
+function Resultados ({addOrRemoveFromFavs}) {
     let query = new URLSearchParams(window.location.search);
     let keyword = query.get('keyword');
 
@@ -40,7 +40,7 @@ function Resultados () {
             }
 
             {moviesResults && 
-                <CardMovie movies={moviesResults}/>
+                <CardMovie movies={moviesResults} addOrRemoveFromFavs={addOrRemoveFromFavs}/>
             }
         </>
         

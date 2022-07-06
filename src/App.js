@@ -71,14 +71,14 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
       <div className="container mt-3">
         <Routes>
           <Route exact path="/" element={<Login/>} />
-          <Route path="/listado" element={<Listado addOrRemoveFromFavs={addOrRemoveFromFavs} favorites={favorites}/>}/>
+          <Route path="/listado" element={<Listado addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
           <Route path="/detalle" element={<Detalle/>}/>
           <Route path="/favoritos" element={<Favoritos addOrRemoveFromFavs={addOrRemoveFromFavs} favorites={favorites}/>}/>
-          <Route path="/resultados" element={<Resultados/>}/>
+          <Route path="/resultados" element={<Resultados addOrRemoveFromFavs={addOrRemoveFromFavs}/>}/>
         </Routes>
       </div>
       <Footer />
