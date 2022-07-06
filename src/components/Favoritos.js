@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Navigate } from 'react-router-dom';
+import "../css/app.css"
 
 function Favoritos ({addOrRemoveFromFavs, favorites}) {
     let token = sessionStorage.getItem('token');
 
     return (
-        <>
+        <div className="divFav">
             {!token && <Navigate to="/"/>}
             <h2>Sección de favoritos</h2>
             <div className='row'>
@@ -35,7 +36,7 @@ function Favoritos ({addOrRemoveFromFavs, favorites}) {
                     })
                 }
             </div>
-        </>
+        </div>
         
     )
 }
