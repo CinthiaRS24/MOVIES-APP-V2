@@ -8,11 +8,12 @@ import Listado from "./components/Listado";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Detalle from "./components/Detalle";
+import Resultados from "./components/Resultados";
+import Favoritos from "./components/Favoritos";
 
 // Styles
 import './css/bootstrap.min.css'
-import Resultados from "./components/Resultados";
-import Favoritos from "./components/Favoritos";
+import swal from '@sweetalert/with-react';
 
 function App() {
 
@@ -57,14 +58,18 @@ function App() {
       tempMoviesInFavs.push(movieData);
       localStorage.setItem('favs', JSON.stringify(tempMoviesInFavs));
       setFavorites(tempMoviesInFavs)
-      console.log("Se agregó la película")
+      swal(
+        "Película agregada a favoritos", "", "success"
+      )
     } else {
       let moviesLeft = tempMoviesInFavs.filter(movie => {
         return movie.id !== movieData.id;
       })
       localStorage.setItem("favs", JSON.stringify(moviesLeft));
       setFavorites(moviesLeft)
-      console.log("Se eliminó la película");
+      swal(
+        "Se eliminó la película de favoritos", "", "success"
+      )
     }
 
   }

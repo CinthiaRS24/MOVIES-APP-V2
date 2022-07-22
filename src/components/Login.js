@@ -37,7 +37,7 @@ function Login() {
         }
 
         axios
-            .post('http://challenge-react.alkemy.org', { email, password })
+            .post('/api/', { email, password })
             .then(res => {
                 const tokenRecibido = res.data.token;
                 sessionStorage.setItem('token', tokenRecibido);

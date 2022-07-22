@@ -6,9 +6,9 @@ import Buscador from "./Buscador"
 function Header ({addOrRemoveFromFavs}) {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <nav className="navbar navbar-expand navbar-dark bg-dark" >
                 <div className="container">
-                    <Link className="navbar-brand" to="/">AlkeFlix</Link>
+                    <p className="titleApp">AlkeFlix</p>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

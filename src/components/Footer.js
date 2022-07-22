@@ -5,15 +5,6 @@ import "../css/app.css"
 
 function Footer () {
     return(
-        // <footer>
-        //     <nav>
-        //         <ul>
-        //             <li><a href="http://instagram.com" rel="noopenernoreferrer">IG</a></li>
-        //         </ul>
-        //     </nav>
-        //     <p>Copyright Cinthia's App</p>
-        // </footer>
-       
         <footer className="page-footer font-small indigo bg-dark" id="footer">
             <div className="divRedes">
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/cinthia-stephany-ramos-suyon/">

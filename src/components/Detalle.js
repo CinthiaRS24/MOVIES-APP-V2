@@ -38,7 +38,7 @@ function Detalle () {
                 <>
                     <h2>Título: {movie.title}</h2>
                     <div className='row'>
-                        <div className='col-4'>
+                        <div className='col-lg-4'>
                             <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className="img-fluid" alt="movie poster"/>
                         </div>
                         <div className='col-8'>

@@ -14,7 +14,7 @@ function Favoritos ({addOrRemoveFromFavs, favorites}) {
                 {
                     favorites.map((movie, index) => {
                         return (
-                            <div className="col-3" key={index}>
+                            <div className="col-lg-3" key={index}>
                                 <div className="card my-4">
                                     <img src={`https://image.tmdb.org/t/p/w500/${movie.imgURL}`} className="card-img-top" alt="..."/>
                                     <button 
