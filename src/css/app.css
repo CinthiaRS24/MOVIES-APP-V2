@@ -68,3 +68,25 @@ body {
     color: rgb(11, 170, 11);
     -webkit-text-stroke: 0.4px white;
 }
+
+@media screen and (max-width: 700px) {
+    .titleApp {
+        font-size: 14px;
+    }
+
+    #myInput {
+        font-size: 11px;
+        width: 85px;
+    }
+    
+    #myButton {
+        font-size: 11px;
+        width: 55px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    #titlesNav {
+        font-size: 11px;
+    }
+}

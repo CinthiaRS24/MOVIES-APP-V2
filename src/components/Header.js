@@ -15,17 +15,14 @@ function Header ({addOrRemoveFromFavs}) {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link">Home</Link>
+                                <Link to="/" className="nav-link" id="titlesNav">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/listado" className="nav-link" >Listado</Link>
+                                <Link to="/listado" className="nav-link" id="titlesNav">Listado</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/favoritos" className="nav-link" >Favoritos</Link>
+                                <Link to="/favoritos" className="nav-link" id="titlesNav">Favoritos</Link>
                             </li>
-                        {/* <li className="nav-item">
-                            <Link to="/contacto" className="nav-link" >Contacto</Link>
-                        </li> */}
                         </ul>
                     </div>
                     <Buscador />
